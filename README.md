@@ -6,42 +6,42 @@ This project aims to simplify VAT calculation, reduce manual errors, and help fr
 
 🚀 Features
 
-Enter service amount and client country
+1.Enter service amount and client country
 
-Fetch real-time EU VAT rates
+2.fetch real-time EU VAT rates
 
-Automatically calculate VAT
+3.Automatically calculate VAT
 
-Display VAT amount and total invoice value
+4.Display VAT amount and total invoice value
 
-Fully responsive design
+5.Fully responsive design
 
-Works on all modern browsers
+6.Works on all modern browsers
 
 🛠 Technologies Used
 
-HTML
+*HTML
 
-CSS
+*CSS
 
-JavaScript
+*JavaScript
 
-Bootstrap
+*Bootstrap
 
-Tailwind CSS
+*Tailwind CSS
 
-EU VAT Rate API
+*EU VAT Rate API
 
-Git & GitHub
+8Git & GitHub
 
 🧩 How It Works
 
-User enters the service amount
+1.User enters the service amount
 
-User selects the EU country
+2.User selects the EU country
 
-The system fetches VAT rate from API
+3.the system fetches VAT rate from API
 
-JavaScript calculates VAT
+4.JavaScript calculates VAT
 
-VAT and total amount are displayed
+5.VAT and total amount are displayed
