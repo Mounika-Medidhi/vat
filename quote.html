@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get a Quote | VAT Auto Calculator</title>
+    <meta name="description" content="Request a personalized VAT quote for your business">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">VATCalc</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html" class="btn active">Get a Quote</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- QUOTE CONTENT -->
+<section class="section">
+    <h1>Get a Quote</h1>
+    
+    <form onsubmit="submitForm(event)">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Country</label>
+        <select required>
+            <option value="">Select your country</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>Spain</option>
+            <option>Italy</option>
+            <option>Netherlands</option>
+            <option>Ireland</option>
+            <option>Sweden</option>
+            <option>Denmark</option>
+            <option>Finland</option>
+            <option>Portugal</option>
+        </select>
+
+        <label>Type of VAT Service</label>
+        <select required>
+            <option value="">Select a service</option>
+            <option>EU VAT Calculation (OSS)</option>
+            <option>Cross-Border Digital Services VAT</option>
+            <option>VAT Registration Assistance</option>
+            <option>VAT Compliance & Reporting</option>
+            <option>Invoice VAT Validation</option>
+            <option>VAT Rate Consultation</option>
+            <option>Freelancer VAT Guidance</option>
+            <option>Custom VAT Solution</option>
+        </select>
+
+        <label>Estimated Amount / Frequency</label>
+        <input type="text" placeholder="e.g. €5,000 per month / occasional" required>
+       <br>
+        <button type="submit" class="btn primary">
+            Submit Request
+        </button>
+
+        <p id="successMessage" class="success-msg">
+            ✅ Submitted successfully! We’ll contact you shortly.
+        </p>
+
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Newsletter -->
+        <div class="footer-box">
+            <h3>Newsletter</h3>
+            <p>
+                Stay updated with EU VAT changes, OSS rules,
+                and freelancer tax tips.
+            </p>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Quick Info -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li>EU VAT Calculator</li>
+                <li>OSS Compliance</li>
+                <li>VAT Reporting</li>
+                <li>Freelancer Support</li>
+            </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-box">
+            <h3>Address</h3>
+            <p>
+                VAT Auto Calculator<br>
+                Europe (Remote Service)<br>
+                Serving EU Freelancers
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: support@vatcalc.com</p>
+            <p>Mon – Fri: 9am – 6pm CET</p>
+
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 VAT Auto Calculator. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script>
+function submitForm(event) {
+    event.preventDefault();
+
+    document.getElementById("successMessage").style.display = "block";
+    event.target.reset();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services | VAT Auto Calculator</title>
+    <meta name="description" content="VAT calculation services for EU freelancers using OSS scheme">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">VATCalc</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html" class="btn">Get a Quote</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="section">
+    <h1>Our VAT Services</h1>
+
+    <div class="services-layout">
+
+        <!-- LEFT: CALCULATOR -->
+        <div class="service-left">
+            <div class="calculator">
+
+                <input
+    type="text"
+    id="display"
+    placeholder="Enter amount"
+    oninput="validateInput(this)"
+>
+
+
+                <select id="country">
+                    <option value="0.19">Germany (19%)</option>
+                    <option value="0.20">France (20%)</option>
+                    <option value="0.21">Spain (21%)</option>
+                    <option value="0.22">Italy (22%)</option>
+                    <option value="0.21">Netherlands (21%)</option>
+                    <option value="0.23">Ireland (23%)</option>
+                    <option value="0.25">Denmark (25%)</option>
+                    <option value="0.24">Finland (24%)</option>
+                    <option value="0.20">Austria (20%)</option>
+                    <option value="0.23">Portugal (23%)</option>
+                </select>
+
+                <div class="keys">
+                    <button onclick="appendValue('7')">7</button>
+                    <button onclick="appendValue('8')">8</button>
+                    <button onclick="appendValue('9')">9</button>
+                    <button class="action" onclick="clearDisplay()">C</button>
+
+                    <button onclick="appendValue('4')">4</button>
+                    <button onclick="appendValue('5')">5</button>
+                    <button onclick="appendValue('6')">6</button>
+                    <button class="action" onclick="removeLast()">⌫</button>
+
+                    <button onclick="appendValue('1')">1</button>
+                    <button onclick="appendValue('2')">2</button>
+                    <button onclick="appendValue('3')">3</button>
+                    <button class="equal" onclick="calculateVAT()">=</button>
+
+                    <button class="zero" onclick="appendValue('0')">0</button>
+                    <button onclick="appendValue('.')">.</button>
+                </div>
+
+                <div class="result">
+                    <div class="result-box vat-box">
+                        <span>VAT Amount</span>
+                        <strong><span id="vat">0.00</span></strong>
+                    </div>
+
+                    <div class="result-box total-box">
+                        <span>Total Amount</span>
+                        <strong><span id="total">0.00</span></strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RIGHT: INFO PANEL -->
+        <div class="service-right">
+            <h2>How This VAT Calculator Helps You</h2>
+
+            <p>
+                Our VAT Auto Calculator is designed for freelancers and small businesses
+                who provide digital services across multiple EU countries.
+            </p>
+
+            <ul class="service-points">
+                <li> Supports multiple EU VAT rates</li>
+                <li> Calculates VAT instantly</li>
+                <li> Reduces manual calculation errors</li>
+                <li> OSS-compliant calculations</li>
+                <li> Freelancer-friendly interface</li>
+            </ul>
+
+            <div class="service-steps">
+                <h3>How it works</h3>
+                <p>1. Select the client’s country</p>
+                <p>2. Enter the service amount</p>
+                <p>3. View VAT and total instantly</p>
+            </div>
+
+            <p class="trust-text">
+                Trusted by freelancers working with EU clients for accurate VAT calculations.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<script src="js/script.js"></script>
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Newsletter -->
+        <div class="footer-box">
+            <h3>Newsletter</h3>
+            <p>
+                Stay updated with EU VAT changes, OSS rules,
+                and freelancer tax tips.
+            </p>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Quick Info -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li>EU VAT Calculator</li>
+                <li>OSS Compliance</li>
+                <li>VAT Reporting</li>
+                <li>Freelancer Support</li>
+            </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-box">
+            <h3>Address</h3>
+            <p>
+                VAT Auto Calculator<br>
+                Europe (Remote Service)<br>
+                Serving EU Freelancers
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: support@vatcalc.com</p>
+            <p>Mon – Fri: 9am – 6pm CET</p>
+
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 VAT Auto Calculator. All rights reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>

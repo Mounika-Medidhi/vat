@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | VAT Auto Calculator</title>
+    <meta name="description" content="Learn about VAT, the EU OSS scheme, and how the VAT Auto Calculator helps freelancers">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">VATCalc</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html" class="btn">Get a Quote</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ABOUT PAGE -->
+<section class="section">
+    <h1>About VAT Auto Calculator</h1>
+
+    <!-- TEXT + IMAGE SIDE BY SIDE -->
+    <div class="about-wrapper">
+
+        <!-- LEFT CONTENT -->
+        <div class="about-left">
+            <p>
+    Value Added Tax (VAT) is a consumption-based tax applied to goods and services
+    across the European Union. It is collected incrementally at each stage of the
+    supply chain, from production to final sale, but the total tax burden is
+    ultimately borne by the end consumer. Businesses act as tax collectors on
+    behalf of the government by charging VAT on sales and remitting it to tax
+    authorities.
+</p>
+
+<p>
+    VAT rates are not uniform across the EU. Each country sets its own standard
+    and reduced rates, which can change over time. Understanding these variations
+    is essential for accurate billing and compliance, especially for freelancers
+    providing services internationally.
+</p>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="about-right">
+            <img src="images/third.jpg" alt="EU VAT Illustration">
+        </div>
+
+    </div>
+
+    <!-- ACCORDION -->
+    <div class="accordion">
+
+        <div class="accordion-item">
+            <h3 onclick="toggleAccordion(this)">What is VAT?</h3>
+            <div class="accordion-content">
+                <p>
+                    Value Added Tax (VAT) is a consumption-based tax applied to goods and services across the European
+                    Union. It is collected at each stage of the supply chain and ultimately paid by the end consumer.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h3 onclick="toggleAccordion(this)">EU One Stop Shop (OSS) Scheme</h3>
+            <div class="accordion-content">
+                <p>
+    The One Stop Shop (OSS) scheme is an EU-wide initiative designed to simplify
+    VAT compliance for businesses providing cross-border digital services and
+    certain goods. Instead of registering for VAT in every EU country where
+    customers are located, businesses can submit a single VAT return through
+    the OSS portal in their home country.
+</p>
+
+<p>
+    This system significantly reduces administrative overhead and reporting
+    complexity. However, businesses must still calculate VAT accurately for
+    each customer’s country, making reliable calculation tools essential for
+    proper OSS compliance.
+</p>
+
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h3 onclick="toggleAccordion(this)">Why Freelancers Need This Tool</h3>
+            <div class="accordion-content">
+                <p>
+    Freelancers frequently work with clients from multiple EU countries, each
+    with different VAT rates and regulatory requirements. Manually tracking
+    these variations can lead to calculation errors, compliance risks, and
+    potential penalties from tax authorities.
+</p>
+
+<p>
+    The VAT Auto Calculator helps freelancers automate VAT calculations by
+    instantly applying the correct country-specific rate. This reduces errors,
+    saves time, and allows freelancers to focus on their core work while staying
+    fully compliant with EU VAT and OSS regulations.
+</p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Newsletter -->
+        <div class="footer-box">
+            <h3>Newsletter</h3>
+            <p>
+                Stay updated with EU VAT changes, OSS rules,
+                and freelancer tax tips.
+            </p>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Quick Info -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li>EU VAT Calculator</li>
+                <li>OSS Compliance</li>
+                <li>VAT Reporting</li>
+                <li>Freelancer Support</li>
+            </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-box">
+            <h3>Address</h3>
+            <p>
+                VAT Auto Calculator<br>
+                Europe (Remote Service)<br>
+                Serving EU Freelancers
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: support@vatcalc.com</p>
+            <p>Mon – Fri: 9am – 6pm CET</p>
+
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 VAT Auto Calculator. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script>
+function toggleAccordion(element) {
+    const content = element.nextElementSibling;
+
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
